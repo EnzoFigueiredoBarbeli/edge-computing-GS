@@ -1,0 +1,20 @@
+const int botaoPin = 2; 
+const int buzinaPin = 3; 
+
+void setup() {
+  pinMode(botaoPin, INPUT_PULLUP); // Configura o pino do botão como entrada com resistor de pull-up interno
+  pinMode(buzinaPin, OUTPUT);      // Configura o pino da buzina como saída
+}
+
+void loop() {
+  int estadoBotao = digitalRead(botaoPin);  // Lê o estado do botão (HIGH quando não pressionado, LOW quando pressionado)
+
+  if (estadoBotao == LOW) {
+    // Se o botão for pressionado, aciona a buzina
+    tone(buzinaPin, 1000);  // Gera um tom de 1000 Hz na buzina
+    delay(500);             // Mantém a buzina ativada por 500 milissegundos (0,5 segundos)
+    noTone(buzinaPin);      // Desliga a buzina
+    delay(500);             // Aguarda 500 milissegundos para evitar acionamento repetitivo
+  }
+}
+
