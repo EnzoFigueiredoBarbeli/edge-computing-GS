@@ -21,3 +21,5 @@ Pressione o botão quando for necessário sinalizar um atendimento emergencial.
 O Arduino acionará a buzina por um curto período de tempo, alertando os médicos sobre a situação.
 Impacto:
 Este sistema simples visa melhorar a eficiência no ambiente hospitalar, fornecendo uma maneira rápida e direta de alertar os médicos sobre atendimentos emergenciais. Ao pressionar o botão, os médicos podem ser notificados imediatamente, permitindo uma resposta mais rápida e potencialmente salvando vidas.
+
+Feito por: Felipe Santana RM:554259  e Enzo Barbeli RM:554272
